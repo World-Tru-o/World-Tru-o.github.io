@@ -1,0 +1,213 @@
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="search.css" />
+    <link rel=" icon" href="websitelogo.png">
+</head>
+
+<body class="result" id="middle">
+    <div class="content">
+        <h2>RESULT</h2>
+        <div class="box1">
+            <div class="boxheading">
+                <h1>Find Your Best Deal</h1>
+            </div>
+            <div class="detailsbox">
+                <div class="input1">
+                    <h1>Depature From</h1>
+                    <input type="text" id="receivedFromName">
+                </div>
+                <div class="input2">
+                    <h1>Arrive At</h1>
+                    <input type="text" id="receivedToName">
+                </div>
+                <div class="input3">
+                    <h1>Departure Date</h1>
+                    <input type="date" id="enteredFromDate">
+                </div>
+                <div class="input4">
+                    <h1>Return Date</h1>
+                    <input type="date" id="enteredToDate">
+                </div>
+                <div class="input5">
+                    <h1>Class</h1><input type="number" id="passenger-value" min="1" value="1">
+                </div>
+                <div class="input6">
+                    <h1>Passengers</h1>
+                    <select id="class" name="class">
+                        <option value="Economy Class">Economy Class</option>
+                        <option value="Business Class">Business Class</option>
+                        <option value="First Class">First Class</option>
+                    </select>
+                </div>
+                <!-- <a href="#lower">
+                    <button class="smallsearchbox">
+                        <div class="smallsearchtxt">Search</div>
+                    </button></a> -->
+
+            </div>
+        </div>
+        <div class="box2">
+            <div class="main-result">
+
+
+                <div class="detail-01">
+                    <div class="logo"><img src="logo1.png" alt="" /></div>
+                    <div class="depart">
+                        <h3><b>Depart</b></h3>
+                        <div class="date1">
+                            <input type="date" class="departure-date">
+                        </div>
+                        <div class="time">
+                            <input type="time" id="" value="23:00:00">
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="Stops"><b>Rs.2500</b></div>
+                    <div class="arrive">
+                        <h3><b>Arrive</b></h3>
+                        <input type="date" name="" class="arrival-date">
+                        <div class="time">
+                            <input type="time" name="" id="" value="13:00:00">
+                        </div>
+                    </div>
+                    <div class="line1"></div>
+
+                    <h3><b>Price</b></h3>
+                    <div class="Price">
+                        <form action="Payment-gateway.html"  onsubmit="getAmountData()">
+                            <input type="hidden" class="totalAmount" id="totalAmount1" name="totalAmount1" />
+                            <input type="submit" value="Book">
+                        </form>
+                    </div>
+                </div>
+                <div class="detail-02">
+                    <div class="logo"><img src="logo2.png" alt="" /></div>
+                    <div class="depart">
+                        <h3><b>Depart</b></h3>
+                        <div class="date1">
+                            <input type="date" class="departure-date">
+                        </div>
+                        <div class="time">
+                            <input type="time" name="" id="" value="23:00:00">
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="Stops"><b>Rs.3500</b></div>
+                    <div class="arrive">
+                        <h3><b>Arrive</b></h3>
+                        <input type="date" name="" id="" class="arrival-date">
+                        <div class="time">
+                            <input type="time" name="" id="" value="13:00:00">
+                        </div>
+                    </div>
+                    <div class="line1"></div>
+
+                    <h3><b>Price</b></h3>
+                    <div class="Price">
+                        <form action="Payment-gateway.html"  onsubmit="getAmountData()">
+                            <input type="hidden" class="totalAmount" id="totalAmount2" name="totalAmount2" />
+                            <input type="submit" value="Book">
+                        </form>
+                    </div>
+                </div>
+                <div class="detail-03">
+                    <div class="logo"><img src="logo3.png" alt="" /></div>
+                    <div class="depart">
+                        <h3><b>Depart</b></h3>
+                        <div class="date1">
+                            <input type="date" name="" id="" class="departure-date">
+                        </div>
+                        <div class="time">
+                            <input type="time" name="" id="" value="23:00:00">
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="Stops"><b>Rs.4500</b></div>
+                    <div class="arrive">
+                        <h3><b>Arrive</b></h3>
+                        <input type="date" name="" id="" class="arrival-date">
+                        <div class="time">
+                            <input type="time" name="" id="" value="13:00:00">
+                        </div>
+                    </div>
+                    <div class="line1"></div>
+
+                    <h3><b>Price</b></h3>
+                    <div class="Price">
+                        <form action="Payment-gateway.html"  onsubmit="getAmountData()">
+                            <input type="hidden" class="totalAmount" id="totalAmount3" name="totalAmount3" />
+                            <input type="submit" value="Book">
+                        </form>
+                    </div>
+                </div>
+                <div class="detail-04">
+                    <div class="logo"><img src="logo4.png" alt="" /></div>
+                    <div class="depart">
+                        <h3><b>Depart</b></h3>
+                        <div class="date1">
+                            <input type="date" name="" id="" class="departure-date">
+                        </div>
+                        <div class="time">
+                            <input type="time" name="" id="" value="23:00:00">
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="Stops"><b>Rs.5000</b></div>
+                    <div class="arrive">
+                        <h3><b>Arrive</b></h3>
+                        <input type="date" name="" id="" class="arrival-date">
+                        <div class="time">
+                            <input type="time" name="" id="" value="13:00:00">
+                        </div>
+                    </div>
+                    <div class="line1"></div>
+
+                    <h3><b>Price</b></h3>
+                    <div class="Price">
+                        <form action="Payment-gateway.html"  onsubmit="getAmountData()">
+                            <input type="hidden" class="totalAmount" id="totalAmount4" name="totalAmount4" />
+                            <input type="submit" value="Book">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var queryDict = {}
+        location.search.substr(1).split("&").forEach(function (item) {
+            queryDict[item.split("=")[0]] = item.split("=")[1]
+        })
+        // Setting Details Box Details
+        document.getElementById("receivedFromName").value = queryDict["fromName"];
+        document.getElementById("receivedToName").value = queryDict["toName"];
+        document.getElementById("enteredFromDate").value = queryDict["enteredFromDate"];
+        document.getElementById("enteredToDate").value = queryDict["enteredToDate"];
+
+        //Departure Date set
+        document.getElementsByClassName("departure-date")[0].value = queryDict["enteredFromDate"];
+        document.getElementsByClassName("departure-date")[1].value = queryDict["enteredFromDate"];
+        document.getElementsByClassName("departure-date")[2].value = queryDict["enteredFromDate"];
+        document.getElementsByClassName("departure-date")[3].value = queryDict["enteredFromDate"];
+
+        //Arrival Date set
+        document.getElementsByClassName("arrival-date")[0].value = queryDict["enteredToDate"];
+        document.getElementsByClassName("arrival-date")[1].value = queryDict["enteredToDate"];
+        document.getElementsByClassName("arrival-date")[2].value = queryDict["enteredToDate"];
+        document.getElementsByClassName("arrival-date")[3].value = queryDict["enteredToDate"];
+
+        //Flight Amount for checkout page based On Number of Passengers
+        function getAmountData() {
+            let airplaneTicketPrice = 2500;
+            let passengerNumber = document.getElementById("passenger-value").value;
+            let totalAmount = passengerNumber * airplaneTicketPrice;
+            document.getElementsByClassName("totalAmount")[0].value = totalAmount;
+            document.getElementsByClassName("totalAmount")[1].value = totalAmount + 1000;
+            document.getElementsByClassName("totalAmount")[2].value = totalAmount + 2000;
+            document.getElementsByClassName("totalAmount")[3].value = totalAmount * 2;
+        }   
+    </script>
+
+</body>
+
+</html>

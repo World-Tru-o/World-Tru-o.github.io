@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search Page</title>
+    <link rel="stylesheet" href="search.css" />
+    <link rel=" icon" href="websitelogo.png" />
+  </head>
+
+  <body>
+    <form action="result.html">
+      <upper class="search">
+        <div class="background">
+          <div class="heading">
+            <img src="airplane.png" alt="" class="logo" />
+            <h1>Book</h1>
+            <img src="airplane.png" alt="" class="logo1" />
+          </div>
+          <div class="content">
+            <div class="submain">
+              <h2>Flight Booking</h2>
+            </div>
+            <div class="inputboxes">
+              <div class="boxes1">
+                <div class="option1">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="Oneway"
+                    name="cat egory"
+                  />
+                  <label for="Oneway"><b>One way</b></label>
+                </div>
+                <div class="option2">
+                  <input
+                    type="radio"
+                    class="radio"
+                    id="RoundTrip"
+                    name="category"
+                  />
+                  <label for="RoundTrip"><b>Round Trip</b></label>
+                </div>
+              </div>
+              <div class="boxes2">
+                <div class="subheading">
+                  <h2>Select location</h2>
+                </div>
+                <div class="cfrom">
+                  <input
+                    type="input"
+                    id="input"
+                    class="location_name"
+                    placeholder="Where"
+                    name="fromName"
+                    id="name"
+                    required
+                  />
+                </div>
+
+                <div class="cto">
+                  <input
+                    type="input"
+                    id="input"
+                    class="location_name"
+                    placeholder="To.....?"
+                    name="toName"
+                    id="name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="boxes3">
+                <div class="subheading">
+                  <h2>Select Date</h2>
+                </div>
+                <div class="date1">
+                  <h3>From</h3>
+                  <input
+                    type="date"
+                    class="fromDate"
+                    id="dfdate"
+                    name="enteredFromDate"
+                  />
+                </div>
+                <div class="date2">
+                  <h3>To</h3>
+                  <input
+                    type="date"
+                    class="toDate"
+                    id="toDate"
+                    name="enteredToDate"
+                  />
+                </div>
+              </div>
+              <input type="submit" class="searchbox" value="Search" />
+              <!-- <div class="searchtxt">Search</div> -->
+            </div>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30703755.931868322!2d64.40728114331513!3d20.049727244682934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1642092261683!5m2!1sen!2sin"
+              width="594"
+              height="430"
+              style="border-radius: 20px; border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </upper>
+    </form>
+  </body>
+  <script>
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    if (month < 10) {
+      month = "0" + month;
+    }
+    var todayDate = String(date.getDate()).padStart(2, "0");
+    var futureDate = String(date.getDate() + 1).padStart(2, "0");
+    var datePattern = year + "-" + month + "-" + todayDate;
+    var toDatePattern = year + "-" + month + "-" + futureDate;
+    
+    document.getElementById("dfdate").value = datePattern;
+    document.getElementById("toDate").value = toDatePattern;
+  </script>
+</html>

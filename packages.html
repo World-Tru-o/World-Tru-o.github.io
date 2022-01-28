@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <STYLE>
+        .packhead{
+            box-shadow: 7px 7px 8px rgba(99, 93, 93, 0.568);
+        }
+        .packhead{
+            background-color: skyblue;
+            text-align: center;
+            padding: 2.5rem;
+           
+        }
+        .packhead span{
+            font-size: 2.5rem;
+            background-color: lightblue;
+            color: rgb(28, 28, 196);
+            border-radius: .5rem;
+            padding: 2px ;
+        }
+        .packages .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+        .packages .box-container .box{
+            flex: 1 1 30rem;
+            overflow: hidden;
+            border: 1px solid lightgray;
+            border-radius: 2px;
+            box-shadow: 5px 6px 5px rgba(99, 93, 93, 0.568);
+            box-shadow: inset 0 0 0 0  rgb(70, 79, 165) ;
+            transition: ease-in-out 0.7s;
+        }
+        .packages .box-container .box:hover{
+            box-shadow: inset 500px 0 0 0  rgb(157, 196, 211) ;
+            color: black;
+        }
+        .packages .box-container .box:hover .material-icons{
+            color: black;
+        }
+        .packages .box-container .box img{
+            width: 100%;
+            height: 28vh;
+            object-fit: cover;
+        }
+        .packages .box-container .box .content{
+            padding: 2px;
+
+        }
+        .packages .box-container .box .content h3{
+            color: #333;
+            font-size: 23px;
+            padding: 0px;
+            margin: 10px;
+        }
+        .packages .box-container .box .content h3 i{
+            color: rgb(112, 195, 228)
+
+        }
+        .packages .box-container .box .content p{
+            color: #333;
+            margin-top: 0px;
+            padding: 2px;
+            margin-left: 5px;
+        }
+        .packages .box-container .box .content .stars{
+            margin-left: 6px;
+            font-size: 15px;
+            margin-top: -8px;
+            color: orange;
+        }
+        .packages .box-container .box .content .price{
+            font-size: 16px;
+            color: #333;
+            margin-top: 4px;
+            margin-left: 5px;
+        }
+        .packages .box-container .box .content .price span{
+            color: #666;
+            text-decoration: line-through;
+        }
+        #booknow{
+            border: 2px solid skyblue;
+            color: white;
+            background-color: rgba(8, 8, 8, 0.877);
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 11px;
+            padding: 5px;
+            position: relative;
+            top: -15px;
+            box-shadow: inset 0 0 0 0  rgb(39, 52, 175) ;
+            margin-left: 175px;
+            font-family: 'Anton', sans-serif;
+            transition: ease-out 0.5s;
+        }
+        #booknow:hover{
+            box-shadow: inset 81px 0 0 0  skyblue ;
+            color: black;
+        }
+        
+       
+    </STYLE>
+
+</head>
+<body>
+    <section class="packages" id="packages">
+        <h1 class="packhead">
+            <span>P</span>
+            <SPAN>A</SPAN>
+            <SPAN>C</SPAN>
+            <SPAN>K</SPAN>
+            <SPAN>A</SPAN>
+            <SPAN>G</SPAN>
+            <SPAN>E</SPAN>
+            <SPAN>S</SPAN>
+            
+        </h1>
+        <div class="box-container">
+
+            <div class ="box" id="boxx">
+                <img src="tower.jpg" alt="" id="paris">
+                <div class="content">
+                    <h3><i class="material-icons">&#xe55f;</i>Paris</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                    <div class="stars">
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star  "></span>
+                        <span class="fas fa-star  "></span>
+                        <span class="fas fa-star  "></span> 
+                        <i class="far fa-star "></i>
+                        
+                    </div>
+                    <div class="price">&#8377;28,748 <span>&#8377;37,448</span></div>
+                    <a href="#" id="booknow">Book now</a>
+                </div>
+            </div>
+        
+        
+            <div class="box">
+                <img src="sydney.jpg" alt="" id="sydney">
+                <div class="content">
+                    <h3> <i class="material-icons">&#xe55f;</i>Sydney</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                    <div class="stars">
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                    </div>
+                    <div class="price">&#8377;78,854 <span>&#8377;94,885</span></div>
+                    <a href="#" id="booknow">Book now</a>
+                </div>
+            </div>
+        
+        
+            <div class="box">
+                <img src="zurich.jpg" alt="" id="zurich" >
+                <div class="content">
+                    <h3> <i class="material-icons">&#xe55f;</i>Zurich</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                    <div class="stars">
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="far fa-star "></span>
+                        <!-- <span class="fa">&#9734;</span> -->
+                    </div>
+                    <div class="price">&#8377;26,774 <span>&#8377;32,123</span></div>
+                    <a href="#" id="booknow">Book now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="maldives.jpg" alt="" id="maldives">
+                <div class="content">
+                    <h3> <i class="material-icons">&#xe55f;</i>Maldives</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                    <div class="stars">
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="far fa-star "></span>
+                    </div>
+                    <div class="price">&#8377;7,282 <span>&#8377;10,881</span></div>
+                    <a href="#" id="booknow">Book now</a>
+                </div>
+            </div>
+        
+        
+            <div class="box">
+                <img src="bali.jpg" alt="" id="bali" >
+                <div class="content">
+                    <h3> <i class="material-icons">&#xe55f;</i>Bali</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                    <div class="stars">
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                    </div>
+                    <div class="price">&#8377;85,282 <span>&#8377;110,881</span></div>
+                    <a href="#" id="booknow">Book now</a>
+                </div>
+            </div>
+        
+        
+            <div class="box">
+                <img src="italy.jpg" alt="" id="italy">
+                <div class="content">
+                    <h3> <i class="material-icons">&#xe55f;</i>Italy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                    <div class="stars">
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="far fa-star "></span>
+                    </div>
+                    <div class="price">&#8377;24,537 <span>&#8377;35,521</span></div>
+                    <a href="#" id="booknow">Book now</a>
+                </div>
+            </div>
+        
+        
+            <div class="box">
+                <img src="mauritius.jpg" alt="" id="mauritius">
+                <div class="content">
+                    <h3> <i class="material-icons">&#xe55f;</i>Mauritius</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                    <div class="stars">
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="far fa-star "></span>
+                    </div>
+                    <div class="price">&#8377;47,166 <span>&#8377;77,128</span></div>
+                    <a href="#" id="booknow">Book now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="greenland.jpg" alt="" id="greenland">
+                <div class="content">
+                    <h3> <i class="material-icons">&#xe55f;</i>Greenland</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                    <div class="stars">
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="far fa-star "></span>
+                    </div>
+                    <div class="price">&#8377;52,763 <span>&#8377;66,834</span></div>
+                    <a href="#" id="booknow">Book now</a>
+                </div>
+            </div>
+        
+        
+            <div class="box">
+            <img src="london.jpeg" alt="" >
+            <div class="content">
+                <h3> <i class="material-icons">&#xe55f;</i>London</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe rem quidem voluptate.</p>
+                <div class="stars">
+                    <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                        <span class="fas fa-star "></span>
+                </div>
+                <div class="price">&#8377;20,900 <span>&#8377;36,706</span></div>
+                <a href="#" id="booknow">Book now</a>
+            </div>
+        </div>
+        
+    </div>
+        
+    </section>
+</body>
+</html>

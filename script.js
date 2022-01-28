@@ -1,13 +1,11 @@
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-
-let searchBtn = document.querySelector('#search-btn');
-let searchBar = document.querySelector('.search-bar-container');
-
-searchBtn.addEventListener('click', () =>{
-    searchBtn.classList.toggle('fa-times');
-    searchBar.classList.toggle('active');
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
 });
-logk= ()=>{
-    document.querySelector('.loadd').style.background="black"; 
-}
-setTimeout(logk, 2100);
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});

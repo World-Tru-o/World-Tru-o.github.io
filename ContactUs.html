@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <link rel=" icon" href="websitelogo.png">
+    
+    <link rel="stylesheet" href="indexcss.css">
+  </head>
+  <body>
+      <div class="main">
+        <div class="form">
+            <h1 class="heading">Contact Us</h1>
+        <div class="form__group name">
+          <input
+            type="input"
+            id="input"
+            class="form_name"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <br />
+
+        <input
+          type="email"
+          id="input2"
+          class="form_email"
+          placeholder="Email"
+          name="email"
+          id="email"
+          required
+        />
+        <!-- <input type="text" name="Massage" placeholder="Massage"class="massage-btn"> -->
+        <h2 class="subheading">Message</h2>
+        <div class="messagebox">
+          <textarea
+            name="massage"
+            id="input3"
+            cols="50"
+            rows="20"
+            class="massage-btn"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <button class="btn" id="btn1"><div class="btn-text">Send</div></button>
+      
+        <div class="conatanier">
+            <div class="servicebox">
+                <div class="cont">
+                <div class="content">
+                    <h1>Our Main Office</h1>
+                    <p><h3 class="subtext">World Tour & Travel,<br>&nbsp; New Delhi,110001</h3></p>
+                </div>
+            </div>
+                <div class="icon">
+                    <ion-icon name="location-outline"></ion-icon>   
+                </div>
+            </div>
+            <div class="servicebox">
+                <div class="cont">
+                    <div class="content">
+                        <h1>Phone Number</h1>
+                        <p><h3 class="subtext">&nbsp; &nbsp; 1800120700800<br>&nbsp; &nbsp; &nbsp; &nbsp; (TollFree)</h3></p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <div class="content"></div>
+                </div>
+            </div>
+            <div class="servicebox">
+                <div class="cont">
+                    <div class="content">
+                        <h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fax</h1>
+                        <p><h3 class="subtext">&nbsp; &nbsp; 1-212-222 8888</h3></p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <ion-icon name="print-outline"></ion-icon>
+                    <div class="content"></div>
+                </div>
+            </div>
+            <div class="servicebox">
+                <div class="cont">
+                    <div class="content">
+                        <h1>&nbsp; &nbsp; &nbsp; &nbsp;  Email</h1>
+                        <p><h3 class="subtext">WorldTruo@gmail.com</h3></p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <div class="content"></div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <footer class="Footer">
+        <div class="row">
+                 <div class="footer-col">
+             <div class="col1">
+                     <h4>Site Directory</h4>
+                     <ul>
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#">Book</a></li>
+                         <li><a href="#">Packages</a></li>
+                         <li><a href="#">Reviews</a></li>
+                         <li><a href="#">Portfolio</a></li>
+                         <li><a href="#">Contact Us</a></li>
+                     </ul>
+          </div>
+                 </div>
+                 <div class="footer-col">
+             <div class="col2">
+                     <h4>More Info</h4>
+                     <ul>
+                         <li><a href="#">India Toll free No. 1800120700800</a></li>
+                         <li><a href="#">Feedback</a></li>
+                         <li><a href="#">Request</a></li>
+                         <li><a href="#">Copyright 2020<br>
+                  Worlds Tour India</a></li>
+                     </ul>
+          </div>
+                 </div>
+                 <div class="footer-col">
+             <div class="col3">
+                     <h4 class="follow">Follow us</h4>
+                     <div class="social-links">
+                         <a href="#"><i ><img src="facebook2.png" alt="" class="fb"></i></a>
+                         <a href="#"><i ><img src="twitter2.png" alt="" class="twt"></i></a>
+                         <a href="#"><i ><img src="instagram2.png" alt="" class="insta"></i></a>
+                         <a href="#"><i ><img src="linkedin2.png" alt="" class="link"></i></a>
+                     </div>
+          </div>
+                 </div>
+                 <img src="123.png" alt="" class="codelogo">
+             </div>
+         </div>
+        
+      </footer>
+    </div>
+    </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    var input = document.getElementById("input");
+    btn1.onclick = function () {
+      input.value = "";
+      input2.value = "";
+      input3.value = "";
+    };
+  </script>
+
+</html>

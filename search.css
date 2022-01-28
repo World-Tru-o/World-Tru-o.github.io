@@ -1,0 +1,923 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.search .background {
+  position: absolute;
+  display: block;
+  justify-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(107.69deg, #0059ff 3.38%, #6196ff 93.79%);
+}
+/* ------------------------------upper---------------------------------------- */
+.background .heading {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 1290px;
+  height: 135px;
+  background-color: black;
+  border-radius: 20px;
+}
+.background .heading h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 101.64px;
+  line-height: 119px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.background .heading img {
+  position: absolute;
+  width: 109px;
+  height: 109px;
+}
+.background .heading .logo {
+  left: 170px;
+  top: 15px;
+}
+
+.background .heading .logo1 {
+  left: 981px;
+  top: 15px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.background .content .submain {
+  background-color: rgba(255, 255, 255, 0.397);
+  margin-top: 190px;
+  width: 630px;
+  border-radius: 20px;
+  height: 430px;
+  margin-left: 40px;
+}
+.background .content .submain h2 {
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding-top: 15px;
+  margin-left: 20px;
+  font-size: 40px;
+}
+.background .map {
+  position: relative;
+  margin-left: 728px;
+  margin-top: -430px;
+}
+.background .inputboxes .boxes1 {
+  display: inline;
+  margin-left: 20px;
+  position: absolute;
+  width: 587px;
+  height: 48px;
+  left: 40px;
+  top: 260px;
+
+  background: rgba(255, 255, 255, 0.712);
+  border-radius: 20px;
+}
+.background .inputboxes .boxes2 {
+  display: inline;
+  margin-left: 20px;
+  position: absolute;
+  width: 587px;
+  height: 90px;
+  left: 40px;
+  top: 320px;
+
+  background: rgba(255, 255, 255, 0.712);
+  border-radius: 20px;
+}
+.background .inputboxes .boxes2 .cfrom {
+  top: 10px;
+}
+.background .inputboxes .boxes3 {
+  display: inline;
+  margin-left: 20px;
+  position: absolute;
+  width: 587px;
+  height: 105px;
+  left: 40px;
+  top: 420px;
+
+  background: rgba(255, 255, 255, 0.712);
+  border-radius: 20px;
+}
+.background .inputboxes .boxes3 .date1 {
+  width: 100px;
+  margin-left: 30px;
+}
+.background .inputboxes .boxes3 .date2 {
+  position: absolute;
+  margin-left: 350px;
+  margin-top: -52px;
+}
+.background .content .inputboxes .boxes1 .option1 {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+.background .content .inputboxes .boxes1 .option1 label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.radio {
+  border: 2px solid #000000;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.background .content .inputboxes .boxes1 .option2 {
+  position: relative;
+  margin-top: -28px;
+  margin-left: 320px;
+}
+.background .content .inputboxes .boxes1 .option2 label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.subheading {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.cfrom {
+  position: relative;
+  margin-top: -5px;
+
+  margin-left: 35px;
+  display: flex;
+}
+
+.location_name {
+  height: 30px;
+  margin-left: -10px;
+  width: 220px;
+  font-family: Roboto;
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: 0;
+  font-size: 1.5rem;
+  color: black;
+
+  background: none;
+}
+.location_name::placeholder {
+  color: rgba(0, 0, 0, 0.637);
+  /* opacity: 10;  */
+}
+
+.cto {
+  position: relative;
+  margin-left: 350px;
+  margin-top: -25px;
+}
+.boxes3 .date1{
+  position: absolute;
+  width: 150px;
+}
+.boxes3 .date2{
+  position: absolute;
+  width: 150px;
+  top: 90PX;
+}
+.boxes3 .date1 input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+.boxes3 .date2 input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+.fromDate {
+  padding-left: 40px;
+  border: 0px;
+  width: 150px;
+  height: 30px;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.fromDate:hover {
+  transition: 0.3s ease;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.535),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: rgb(0, 0, 0);
+  background: #6196ff;
+}
+.fromDate:focus {
+  transition: 0.3s ease;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.535),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: white;
+}
+.toDate {
+  padding-left: 40px;
+  border: 0px;
+  width: 150px;
+  height: 30px;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.toDate:hover {
+  transition: 0.3s ease;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.535),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: rgb(0, 0, 0);
+  background: #6196ff;
+}
+.toDate:focus {
+  transition: 0.3s ease;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.535),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: white;
+}
+
+.background .inputboxes .searchbox {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  left: 215px;
+  top: 500px;
+  border: 1px;
+  cursor: pointer;
+  background: #000000;
+  box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.31);
+  border-radius: 20px;
+  transition: 0.2s ease;
+  color: white;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.background .inputboxes .searchbox {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.background .inputboxes .searchbox:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+.background .inputboxes  .searchtxt {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  margin-top: -95px;
+  margin-left : 240px;
+  left: 20px;
+  cursor: pointer;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 83px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  transition: 0.2s ease;
+  color: #ffffff00;
+}
+
+/* -----------------------------------middle-------------------------------- */
+.result {
+  position: absolute;
+  /* top: 100vh; */
+  background: #c3d8ff;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.result .content .box1 {
+  position: absolute;
+  width: 417px;
+  height: 460px;
+  left: 2.5%;
+  top: 150px;
+  background: #ffffff;
+  box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.5);
+  
+}
+.result .content .box1 .boxheading h1{
+  font-size: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 30px;
+}
+.result .content .box1 .detailsbox{
+  position: absolute;
+width: 377px;
+height: 310px;
+left: 22px;
+top: 123px;
+
+background: #d6d6d6;
+/* box-shadow: 7px 3px 7px rgba(0, 0, 0, 0.528); */
+border-radius: 20px;
+}
+.result .content .box1 .detailsbox input:hover{
+  padding-left: 5px;
+}
+.result .content .box1 .detailsbox .input1{
+  position: relative;
+
+}
+.result .content .box1 .detailsbox .input1 h1{
+  position: relative;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:10px ;
+  margin-left:15px ;
+
+}
+.result .content .box1 .detailsbox .input1 input{
+  border: 0;
+  height: 30px;
+  width: 340px;
+  margin-top: 5px;
+  margin-left: 15px;
+background: rgba(59, 117, 223, 0.68);
+/* box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.31); */
+border-radius: 5px;
+}
+.result .content .box1 .detailsbox .input2 h1{
+  position: relative;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:5px ;
+  margin-left:15px ;
+
+}
+.result .content .box1 .detailsbox .input2 input{
+  border: 0;
+  height: 30px;
+  width: 340px;
+  margin-top: 5px;
+  margin-left: 15px;
+background: rgba(59, 117, 223, 0.68);
+/* box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.31); */
+border-radius: 5px;
+}
+.result .content .box1 .detailsbox .input3 h1{
+  position: absolute;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:5px ;
+  margin-left:15px ;
+
+}
+.result .content .box1 .detailsbox .input3 input{
+  position: absolute;
+  top: 177px;
+  border: 0;
+  height: 30px;
+  width: 190px;
+  margin-top: 5px;
+  margin-left: 15px;
+background: rgba(59, 117, 223, 0.68);
+/* box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.31); */
+border-radius: 5px;
+}
+.result .content .box1 .detailsbox .input4 h1{
+  left: 200px;
+  position: relative;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:5px ;
+  margin-left:15px ;
+
+}
+.result .content .box1 .detailsbox .input4 input{
+  position: absolute;
+  border: 0;
+  height: 30px;
+  width: 140px;
+  margin-top: 5px;
+  margin-left: 215px;
+background: rgba(59, 117, 223, 0.68);
+/* box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.31); */
+border-radius: 5px;
+}
+.result .content .box1 .detailsbox .input5 h1{
+  position: absolute;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:5px ;
+  margin-left:15px ;
+  top: 209px;
+
+}
+.result .content .box1 .detailsbox .input5 input{
+  position: absolute;
+  top: 200px;
+  border: 0;
+  height: 30px;
+  width: 140px;
+  margin-top: 46px;
+  margin-left: 215px;
+background: rgba(59, 117, 223, 0.68);
+/* box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.31); */
+border-radius: 5px;
+}
+.result .content .box1 .detailsbox .input6 h1{
+  position: relative;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:5px ;
+  margin-left:215px ;
+  top: 35px
+
+}
+.result .content .box1 .detailsbox .input6 select{
+  
+  border: 0;
+  height: 30px;
+  width: 190px;
+  margin-top: 35px;
+  margin-left: 15px;
+background: rgba(59, 117, 223, 0.68);
+/* box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.31); */
+border-radius: 5px;
+}
+.result .content .box1 .detailsbox button {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  left: 95px;
+  top: 295px;
+  border: 1px;
+  cursor: pointer;
+  background: #000000;
+  box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.31);
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+ 
+
+.result .content .box1 .detailsbox .smallsearchbox:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+.result .content .box1 .detailsbox .smallsearchbox .smallsearchtxt {
+  position: relative;
+  width: 180px;
+  height: 73px;
+  margin-top: -10px;
+  left: 10px;
+  cursor: pointer;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 83px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  transition: 0.2s ease;
+  color: #ffffff;
+}
+.result .content .box2 {
+  position: absolute;
+  width: 793px;
+  height: 730px;
+  left: 475px;
+  top: 120px;
+  display: flex;
+  
+}
+.result .content h2 {
+  position: absolute;
+  top: 40px;
+  align-content: center;
+  text-align: center;
+  left: 2.5%;
+  font-size: 90px;
+  height: 100px;
+  width: 1280px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -15px;
+  background: #0059ffa6;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.289);
+}
+.box2 .main-result .detail-01{
+  transition: 0.5s ;
+
+}
+.box2 .main-result .detail-01:hover{
+  left: 10px;
+  transition: 0.5s ;
+  
+  box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.5);
+}
+.box2 .main-result .detail-02{
+  transition: 0.5s ease;
+
+}
+.box2 .main-result .detail-02:hover{
+  left: 10px;
+  transition: 0.5s ease;
+  
+  box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.5);
+}
+.box2 .main-result .detail-03{
+  transition: 0.5s ease;
+
+}
+.box2 .main-result .detail-03:hover{
+  left: 10px;
+  transition: 0.5s ease;
+  
+  box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.5);
+}
+.box2 .main-result .detail-04{
+  transition: 0.5s ease;
+
+}
+.box2 .main-result .detail-04:hover{
+  left: 10px;
+  transition: 0.5s ease;
+  
+  box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.5);
+}
+[class^="detail-"] {
+  transition: 0.5s ease;
+  position: relative;
+  width: 840px;
+  height: 142px;
+  padding-top: 20px;
+  background: #ffffff;
+  
+  border-radius: 10px;
+  gap: 20px;
+
+  margin-top: 20px;
+  display: flex;
+}
+
+[class^="detail-"] .logo {
+  position: absolute;
+  width: 155px;
+  height: 120px;
+  top: 23px;
+  left: 20px;
+  border: 2px solid black;
+
+  background: #0059ffa6;
+  border-radius: 17.0455px;
+}
+[class^="detail-"] h3{
+  position:absolute;
+  left: 395px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  top: 30px;
+  font-size: 2rem;
+}
+[class^="detail-"] .depart h3{
+  position: absolute;
+  width: 96.09px;
+  height: 34px;
+  left: 230px;
+  top: 33px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.7855px;
+  line-height: 33px;
+  color: #000000;
+}
+[class^="detail-"] .depart .date1{
+  position: absolute;
+  width: 110px;
+}
+[class^="detail-"] .depart .date2{
+  position: absolute;
+  top: 110px;
+  width: 110px;
+  left: 100px;
+}
+[class^="detail-"] .depart .date1 input{
+  border: 0px;
+  width: 130px;
+  height: 30px;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: default;
+  margin-left: 220px;
+  margin-top: 43px;
+ align-items: center;
+ justify-content: center;
+}
+[class^="detail-"] .arrive input{
+  position: absolute;
+  top: 55px;
+  left: 520px;
+  width: 150px;
+  border: 0;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+[class^="detail-"] .arrive input[type="date"]::-webkit-calendar-picker-indicator {
+
+  bottom: 0;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+[class^="detail-"] .depart .time{
+  position: absolute;
+  top: 100px;
+  width: 110px;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+}
+[class^="detail-"] .arrive .time{
+  left: 10px;
+  top: 35px;
+  position: absolute;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+
+}
+[class^="detail-"] .arrive .time input{
+  border: 0;
+  background: none;
+  font-size: 1.5rem;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+
+}
+[class^="detail-"] .arrive .time input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+[class^="detail-"] .depart input[type="date"]::-webkit-calendar-picker-indicator {
+  
+  bottom: 0;
+  
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+}
+[class^="detail-"] .depart .time{
+  left: 220px;
+  top: 90px;
+  position: absolute;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+}
+[class^="detail-"] .depart .time input{
+  border: 0;
+  background: none;
+  font-size: 1.5rem;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+}
+[class^="detail-"] .depart .time input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+[class^="detail-"] .depart .date1 input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+[class^="detail-"] .depart .date2 input{
+  border: 0px;
+  width: 130px;
+  height: 30px;
+  background: #0059ff00;
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: default;
+  margin-left: 220px;
+  margin-top: 40px;
+ align-items: center;
+ justify-content: center;
+}
+[class^="detail-"] .depart .date2 input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+
+[class^="detail-"] .Stops {
+  position: absolute;
+  width: 119px;
+  height: 44px;
+  left: 380px;
+  top: 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  border: 2px solid black;
+
+  background: #0059ffa6;
+  border-radius: 40px;
+}
+[class^="detail-"] .arrive h3{
+  position: absolute;
+  width: 96.09px;
+  height: 34px;
+  left: 540px;
+  top: 33px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.7855px;
+  line-height: 33px;
+  color: #000000;
+
+}
+[class^="detail-"] .Price{
+  position: absolute;
+  width: 119px;
+  height: 44px;
+  left: 680px;
+  top: 70px;
+
+  background: #0059ffa6;
+  border-radius: 10px;
+}
+[class^="detail-"] input{
+  position: absolute;
+  width: 119px;
+  height: 44px;
+  background: #0059ffa6;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+  font-size: 35px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+
+
+
+}
+[class^="detail-"] .line{
+  position: absolute;
+  display: inline;
+  width: 201px;
+  height: 1px;
+  left: 177px;
+  top: 90px;
+  background: #000000;
+  border: 2px solid #000000;
+  
+}
+[class^="detail-"] .line1{
+  position: absolute;
+  width: 176px;
+  height: 1px;
+  left: 501px;
+  top: 90px;
+  background: #000000;
+  border: 2px solid #000000;
+}
+/* ----------------------------------lower---------------------------------- */
+.checkout {
+  position: absolute;
+  top: 150vh;
+  background: #ff000010;
+  width: 100%;
+  height: 100vh;
+}
+
+.checkout .checkoutheading{
+  position: absolute;
+  width: 843px;
+height: 132px;
+left: 37px;
+top: 54px;
+background: #C4C4C4;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.checkout .checkoutheading B{
+  align-items: center;
+  font-size: 7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+.checkout .detailbox{
+  position: absolute;
+width: 843px;
+height: 382px;
+left: 37px;
+top: 211px;
+
+background: #C4C4C4;
+}
+.invoice{
+  position: absolute;
+width: 338px;
+height: 537px;
+left: 900px;
+top: 54px;
+
+background: #C4C4C4;
+}

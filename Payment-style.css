@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 255, 254, 0.589);
+    background-image: url(https://images.unsplash.com/photo-1525396524423-64f7b55f5b33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1015&q=80);
+    background-size: 1550px 750px;
+}
+
+.container{
+    width: 750px;
+    height: 500px;
+    border: 1px solid;
+    background-color: rgba(160, 183, 212, 0.932);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content:space-around;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.first-row{
+     display: flex;
+}
+
+.owner{
+    width: 100%;
+    margin-right: 40px;
+    background-color: rgba(228, 217, 217, 0);
+}
+
+.input-field{
+    border: 1px solid rgba(212, 205, 205, 0.308);
+}
+
+.input-field input{
+    width: 100%;
+    border:none;
+    outline: none;
+    padding: 10px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection select{
+    padding: 10px 20px;
+}
+
+a{
+    background-color: rgb(253, 253, 253);
+    color: rgb(35, 32, 207);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+a:hover{
+    background-color: dodgerblue;
+}
+
+.cards img{
+    width: 100px;
+}

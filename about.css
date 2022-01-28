@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/aboutus/img/BG4.jpg);
+  background-size: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: 1320px;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  min-height: 110vh;
+}
+.about {
+
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 475px;
+    top: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 100px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+.img {
+  width: 250px;
+  height: 250px;
+}
+.container {
+  top: 25px;
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5px;
+}
+.container .card1 {
+  position: relative;
+  height: 220px;
+  max-width: 250px;
+  background: rgb(255, 255, 255);
+  margin: 60px 30px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.727);
+  transition: 0.3s ease-out;
+  background: rgba(46, 107, 220, 0.25);
+  background: rgba(0, 0, 0, 0.707);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container .card1:hover {
+  height: 380px;
+}
+.container .card1 .imgbx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: -60px;
+  left: 0px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card1 .imgbx h2 {
+  color: white;
+  margin-left: 25px;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .card1 .content li {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 20px;
+}
+.container .card1 .imgbx .img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.container .card1 .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.container .card1:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -25px;
+  transition-delay: 0.3s;
+}
+.container .card1 .content .social img {
+  margin-top: 15px;
+  height: 40px;
+  width: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 60%;
+}
+/* ------------------------------------------------------------------- */
+.container .card2 {
+  position: relative;
+  height: 225px;
+  max-width: 500px;
+  background: rgb(255, 255, 255);
+  margin: 30px 30px;
+  margin-bottom: 10px;
+  
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.727);
+  transition: 0.3s ease-out;
+  
+  background: rgba(0, 0, 0, 0.707);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+.container .card2 .logo{
+  margin-top: -5px;
+  background: rgba(0, 0, 0, 0.583);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container .card2 .logo h2{
+  color: white;
+  text-align: center;
+}
+.container .card2:hover {
+  padding-bottom: 100px;
+  height: 320px;
+}
+.container .card2 .imgbx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: -60px;
+  left: 0px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card2 .imgbx h2 {
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+.container .card2 .content li {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 20px;
+}
+.container .card2 .imgbx .img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.container .card2 .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.container .card2:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -30px;
+  transition-delay: 0.3s;
+}
+.container .card2 .content .social img {
+  margin-top: 15px;
+  height: 40px;
+  width: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 60%;
+}
+/* ------------------------------------------------------------------------- */
+.container .card3 {
+  position: relative;
+  height: 220px;
+  max-width: 500px;
+  background: rgb(255, 255, 255);
+  margin: 60px 30px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.727);
+  transition: 0.3s ease-out;
+  background: rgba(46, 107, 220, 0.25);
+  background: rgba(0, 0, 0, 0.707);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container .card3:hover {
+  height: 380px;
+}
+.container .card3 .imgbx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: -60px;
+  left: 0px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card3 .imgbx h2 {
+  color: white;   
+  margin-left: 15px;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+.container .card3 .content li {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 20px;
+}
+.container .card3 .imgbx .img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.container .card3 .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.container .card3:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -25px;
+  transition-delay: 0.3s;
+}
+.container .card3 .content .social img {
+  margin-top: 15px;
+  height: 40px;
+  width: 40px;
+  background: rgb(255, 255, 255);
+  border-radius: 60%;
+}

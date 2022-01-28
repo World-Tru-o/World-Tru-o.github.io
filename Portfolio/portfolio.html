@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>PORTFOLIO</title>
+    <style>
+
+        .portfolio{
+            background-color:rgb(242, 246, 248);
+            z-index: 100;
+        
+        }
+        .heading34{
+            background-color: skyblue;
+            /* color: white; */
+            /* padding: 10px; */
+            text-align: center;
+            padding: 2.5rem;
+            box-shadow: 7px 7px 8px rgba(99, 93, 93, 0.568);
+            
+            
+        }
+        .heading34 span{
+            font-size: 2.5rem;
+            background-color: lightblue;
+            color: rgb(28, 28, 196);
+            border-radius: .5rem;
+            padding: 2px ;
+        }
+        #valbut{
+            /* background-color: rgb(82, 82, 182);  */
+            background-color: rgb(10, 10, 10);
+            color: #15f4ee;
+            font-size: 17px;
+            border: 1.2px solid #15f4ee;
+            text-decoration: none;
+            padding: 7px;
+            transition: ease-out 0.5s;
+            z-index: 1;
+            border-radius: 50px;
+            transition: 1.8s;
+            }
+
+        #valbut:hover{
+            color: #ffff;
+            cursor: pointer;
+            z-index: 1;
+            box-shadow: 0px 5px 30px 0 #15f4ee inset, 0px 2px 30px 0 #15f4ee;
+            transform: scale(1);
+            width: 100px;
+        }
+        .portfolio .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 11px;
+            
+            
+        }
+         .portfolio .box-container .box{
+            overflow: hidden; 
+            border: 2px solid rgb(233, 226, 226);
+            border-radius: .5rem;
+            width: 25vw;
+            height: 13rem;
+            position: relative;
+            left: 110px;
+            box-shadow: 6px 6px 7px rgba(100, 97, 97, 0.7);
+            
+        }
+        .portfolio .box-container .box img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+        .portfolio .box-container .box:hover .content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0,0,0,.7);
+            padding: 0.5rem;
+            transition: 1s;
+            
+           
+        }
+        
+        .portfolio .box-container .box .content h3{ 
+            /* color: rgb(156, 156, 228); */
+            color: #32f3ed;;
+            font-size: 20px;
+        }
+        .portfolio .box-container .box .content p{
+            font-size: 18px;
+            color: #eeee;
+            padding: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading34">
+            <span>P</span>
+            <SPAN>O</SPAN>
+            <SPAN>R</SPAN>
+            <SPAN>T</SPAN>
+            <SPAN>F</SPAN>
+            <SPAN>O</SPAN>
+            <SPAN>L</SPAN>
+            <SPAN>I</SPAN>
+            <SPAN>O</SPAN>
+        </h1>
+        <div class="box-container" style="z-index: 10;">
+            <div class="box">
+                <img src="./Images/image1.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/image2.webp" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/image3.jfif" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/image4.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/image5.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/image6.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/image7.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/image8.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./Images/image9.jpg" alt="">
+                <div class="content">
+                    <h3>Amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maiores beatae architecto </p>
+                    <a href="#" id="valbut">See more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
